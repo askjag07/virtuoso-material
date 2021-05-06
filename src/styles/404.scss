@@ -1,0 +1,10 @@
+.lost {
+      position: absolute !important;
+      bottom: 50% !important;
+      right: 50% !important;
+      transform: translate(50%, 50%) !important;
+      div p {
+            margin-top: 24px !important;
+            margin-bottom: 24px !important;
+      }
+}

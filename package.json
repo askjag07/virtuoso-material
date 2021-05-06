@@ -1,0 +1,34 @@
+{
+  "name": "virtuoso",
+  "author": "Akshaj Jagarapu",
+  "private": true,
+  "description": "Free JavaScript classes brimming with critical thinking activities, enriching code labs, inspiring projects, and more. Learn quintessential skills required for competing in this age of technology.",
+  "version": "1.3.0",
+  "scripts": {
+    "start": "npm run format && gatsby clean && gatsby build && gatsby serve",
+    "test": "npm run format && gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "gatsby": "^3.4.1",
+    "gatsby-plugin-image": "^1.4.0",
+    "gatsby-plugin-manifest": "^3.4.0",
+    "gatsby-plugin-offline": "^4.4.0",
+    "gatsby-plugin-preact": "^5.4.0",
+    "gatsby-plugin-robots-txt": "^1.5.6",
+    "gatsby-plugin-sass": "^4.4.0",
+    "gatsby-plugin-sharp": "^3.4.1",
+    "gatsby-plugin-sitemap": "^4.0.0",
+    "gatsby-source-filesystem": "^3.4.0",
+    "gatsby-theme-material-ui": "^2.0.1",
+    "gatsby-transformer-sharp": "^3.4.0",
+    "preact": "^10.5.13",
+    "preact-render-to-string": "^5.1.19",
+    "react-jutsu": "^3.0.2",
+    "sass": "^1.32.12"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}

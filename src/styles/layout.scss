@@ -1,0 +1,82 @@
+.root {
+  flex-grow: 1 !important;
+  background-color: #fafafa !important;
+  min-height: 100vh !important;
+}
+
+.header {
+  background-color: #fafafa !important;
+}
+
+.title {
+    margin-right: 48px !important;
+}
+
+.page {
+  margin-right: 8px !important;
+}
+
+.cta {
+    margin-left: auto !important;
+}
+.ctaBtn {
+  margin-right: 24px !important;
+}
+
+.footer {
+  text-align: center !important;
+  padding: 16px !important;
+  background-color: #303030 !important;
+}
+.footer-stuck {
+  position: fixed !important;
+  bottom: 0 !important;
+}
+
+.mobile {
+  visibility: hidden !important;
+  text-align: center !important;
+  position: fixed !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  div {
+    position: absolute !important;
+    bottom: 50% !important;
+    right: 50% !important;
+    transform: translate(50%, 0%) !important;
+    div h4 {
+      margin-bottom: 24px !important;
+    }
+  }
+}
+
+@media(max-width: 846px) {
+  html, body {
+    overflow: hidden !important;
+    position: fixed !important;
+    height: 100% !important;
+  }
+  .computerOnly, .page, .cta {
+    visibility: hidden !important;
+  }
+  .header {
+    position: fixed !important;
+    top: 0 !important;
+  }
+  .footer {
+    position: fixed !important;
+    bottom: 0 !important;
+  }
+  .mobile {
+    visibility: visible !important;
+  }
+  .finalCTA {
+    position: fixed !important;
+    bottom: 50% !important;
+    right: 50% !important;
+    transform: translate(50%, 55%) !important;
+      h3 {
+        visibility: hidden !important;
+      }
+  }
+}

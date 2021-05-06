@@ -1,0 +1,33 @@
+.heroPara {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+.cta {
+  margin-right: 24px !important;
+}
+
+.rightBox {
+  padding: 24px !important;
+  text-align: right !important;
+}
+
+.leftBox {
+  padding: 24px !important;
+  text-align: left !important;
+}
+
+.paddBox {
+  padding: 24px !important;
+  h3 {
+    margin-bottom: 16px !important;
+    text-align: center !important;
+  }
+  .MuiPaper-root {
+      padding: 24px !important;
+      p {
+        margin-top: 16px !important;
+        color: rgba(0, 0, 0, 0.54) !important;
+      }
+  }
+}
