@@ -19,6 +19,7 @@ function Jutsu() {
     configOverwrite: {
       disableTileView: true,
       apiLogLevels: [],
+      disableDeepLinking: true,
     },
     interfaceConfigOverwrite: {
       HIDE_INVITE_MORE_HEADER: true,
