@@ -3,7 +3,7 @@
   "author": "Akshaj Jagarapu",
   "private": true,
   "description": "Free JavaScript classes brimming with critical thinking activities, enriching code labs, inspiring projects, and more. Learn quintessential skills required for competing in this age of technology.",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "scripts": {
     "start": "npm run format && gatsby clean && gatsby build && gatsby serve",
     "test": "npm run format && gatsby develop",
