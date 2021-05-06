@@ -1,48 +1,18 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-import {
-  AppBar,
-  Container,
-  Toolbar,
-  Typography,
-  Button,
-  Grid,
-} from '@material-ui/core'
+
+import AppBar from '@material-ui/core/AppBar'
+import Container from '@material-ui/core/Container'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
+import Button from '@material-ui/core/Button'
+import Grid from '@material-ui/core/Grid'
 
 import '../styles/layout.scss'
+import Unsupported from './unsupported'
 
 export default function Layout({ children, nocta, stuck }) {
-  const unsupported = [
-    'Android',
-    'Linux',
-    'armv71',
-    'aarch64',
-    'i686',
-    'iPhone',
-    'iPod',
-    'iPad',
-    'Pike',
-    'BlackBerry',
-    'Pocket',
-    'Nintendo',
-    'Nokia',
-    'S60',
-    'Symbian',
-    'PalmOS',
-    'webOS',
-  ]
-  var supported = true
-  if (typeof window !== `undefined`) {
-    const platform = window.navigator.platform
-    if (
-      new RegExp(unsupported.join('|')).test(platform) ||
-      platform === null ||
-      platform === ''
-    ) {
-      supported = false
-    }
-  }
   return (
     <div className='root'>
       <AppBar color='inherit' position='static' className='header'>
@@ -89,20 +59,7 @@ export default function Layout({ children, nocta, stuck }) {
           </Toolbar>
         </Container>
       </AppBar>
-      <Container className='mobile'>
-        <Grid container justify='center' alignItems='center'>
-          <Grid item xs={6}>
-            <Typography variant='h4'>
-              {supported ? 'Window Too Small' : 'Device Not Supported'}
-            </Typography>
-            <Typography variant='body1'>
-              {supported
-                ? 'To access the full website, please increase the size of the window.'
-                : 'To access the full website, please use a computer. Window size is too small.'}
-            </Typography>
-          </Grid>
-        </Grid>
-      </Container>
+      <Unsupported />
       <Container className='computerOnly'>{children}</Container>
       {!nocta ? (
         <Grid

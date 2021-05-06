@@ -1,12 +1,12 @@
 import React from 'react'
-import {
-  Grid,
-  Typography,
-  Paper,
-  List,
-  Divider,
-  ListItem,
-} from '@material-ui/core'
+
+import Typography from '@material-ui/core/Typography'
+import Grid from '@material-ui/core/Grid'
+import Paper from '@material-ui/core/Paper'
+import List from '@material-ui/core/List'
+import Divider from '@material-ui/core/Divider'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemText from '@material-ui/core/ListItemText'
 
 import Layout from '../templates/layout'
 import '../styles/about.scss'
@@ -104,7 +104,7 @@ export default function About() {
         spacing={4}
         container
         justify='center'
-        alignItems='flex-start'
+        alignItems='center'
         className='meritBox'
       >
         {merits.map(merit => {
@@ -117,11 +117,13 @@ export default function About() {
                   {merit.list.map(item => {
                     return (
                       <ListItem key={item}>
-                        <span role='img' aria-label='Bullet'>
-                          •
-                        </span>
-                        &nbsp;&nbsp;&nbsp;
-                        {item}
+                        <ListItemText>
+                          <span role='img' aria-label='Bullet'>
+                            •
+                          </span>
+                          &nbsp;&nbsp;&nbsp;
+                          {item}
+                        </ListItemText>
                       </ListItem>
                     )
                   })}

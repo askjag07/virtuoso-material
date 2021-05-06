@@ -3,11 +3,11 @@
   "author": "Akshaj Jagarapu",
   "private": true,
   "description": "Free JavaScript classes brimming with critical thinking activities, enriching code labs, inspiring projects, and more. Learn quintessential skills required for competing in this age of technology.",
-  "version": "2.0.0",
+  "version": "2.1.4",
   "scripts": {
-    "start": "npm run format && gatsby clean && gatsby build && gatsby serve",
+    "start": "npm run format && gatsby clean && gatsby build && cp -R public govirtuoso.org && gatsby serve",
     "test": "npm run format && gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+    "format": "prettier --write \"**/*.{js,jsx,scss,json}\""
   },
   "dependencies": {
     "@material-ui/core": "^4.11.4",

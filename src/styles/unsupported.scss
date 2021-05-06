@@ -1,0 +1,22 @@
+.mobile {
+  visibility: hidden !important;
+  text-align: center !important;
+  position: fixed !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  div {
+    position: absolute !important;
+    bottom: 50% !important;
+    right: 50% !important;
+    transform: translate(50%, 0%) !important;
+    h4 {
+      margin-bottom: 24px !important;
+    }
+  }
+}
+
+@media (max-width: 846px) {
+  .mobile {
+    visibility: visible !important;
+  }
+}
