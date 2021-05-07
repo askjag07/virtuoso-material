@@ -13,12 +13,15 @@ function Jutsu() {
     parentNode: 'jitsi-container',
     onMeetingEnd: () => navigate('/'),
     onError: err => {
-      console.clear()
+      console.clear('---')
+      console.clear('---')
+      console.clear('---')
       console.error(err)
+      console.clear('---')
+      console.clear('---')
+      console.clear('---')
     },
     configOverwrite: {
-      disableTileView: true,
-      apiLogLevels: [],
       disableDeepLinking: true,
     },
     interfaceConfigOverwrite: {
@@ -33,7 +36,6 @@ function Jutsu() {
         'camera',
         'desktop',
         'hangup',
-        'chat',
         'sharedvideo',
         'raisehand',
         'stats',

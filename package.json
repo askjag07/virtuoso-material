@@ -3,11 +3,12 @@
   "author": "Akshaj Jagarapu",
   "private": true,
   "description": "Free JavaScript classes brimming with critical thinking activities, enriching code labs, inspiring projects, and more. Learn quintessential skills required for competing in this age of technology.",
-  "version": "2.1.4",
+  "version": "2.2.0",
   "scripts": {
     "start": "npm run reset && npm run format && gatsby build && cp -R public govirtuoso.org && gatsby serve",
     "test": "npm run format && gatsby develop",
     "reset": "gatsby clean && rm -rf govirtuoso.org",
+    "reinstall": "rm -rf node_modules && npm i && npm i gatsby-theme-material-ui",
     "format": "prettier --write \"**/*.{js,jsx,scss,json}\""
   },
   "dependencies": {
