@@ -1,5 +1,5 @@
 {
-  "name": "virtuoso",
+  "name": "virtuoso-client",
   "author": "Akshaj Jagarapu",
   "private": true,
   "description": "Free JavaScript classes brimming with critical thinking activities, enriching code labs, inspiring projects, and more. Learn quintessential skills required for competing in this age of technology.",
@@ -32,5 +32,9 @@
   },
   "devDependencies": {
     "prettier": "^2.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AskJag07/virtuoso-client"
   }
 }
